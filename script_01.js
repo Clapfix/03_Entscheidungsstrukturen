@@ -66,36 +66,52 @@
 
 /******+ Fallunterscheidung***** */
 
+// const firstName ="Jane";
+// let job;
 
-const firstName ="Jane";
-let job;
+// job = "driver";         //... fährt TAXI! / UBER
+// job = "diver";          //... taucht im Rhein!
+// job = "artist";         //... malt ein Bild!
+// job = "pilot";          //... macht etwas anderes! --> default
+// job = "teacher";        //... unterrichtet!
+// job = "instructor";
 
-job = "driver";         //... fährt TAXI! / UBER
-job = "diver";          //... taucht im Rhein!
-job = "artist";         //... malt ein Bild!
-job = "pilot";          //... macht etwas anderes! --> default
-job = "teacher";        //... unterrichtet!
-job = "instructor";
+// switch (job) {
+//     case "driver":      // Test auf == gleichheit
+//         console.log(firstName + " fährt TAXI!");
+//         break;
+//     case "diver":
+//         console.log(firstName + " taucht im Rhein!");
+//         break;
+//     case "artist":    
+//         console.log(firstName + " malt ein Bild!");
+//         break;
 
-switch (job) {
-    case "driver":      // Test auf == gleichheit
-        console.log(firstName + " fährt TAXI!");
-        break;
-    case "diver":
-        console.log(firstName + " taucht im Rhein!");
-        break;
-    case "artist":    
-        console.log(firstName + " malt ein Bild!");
-        break;
-
-    case "teacher":
-    case "instructor":      
-        console.log(firstName + " unterrichtet!");
-        break;
-    case "instructor":
+//     case "teacher":
+//     case "instructor":      
+//         console.log(firstName + " unterrichtet!");
+//         break;
+//     case "instructor":
     
+//         default:        // Black Swan  !!!
+//         console.log(firstName + " macht etwas anderes!");
+//         break;
+// } 
 
-        default:        // Black Swan  !!!
-        console.log(firstName + " macht etwas anderes!");
+/******** Fallunterscheidung / CASE|SWITCH 2*******/
+
+const cond = true;
+const a = 3;
+
+switch (cond) {
+    case (a == 1):
+        console.log("a ist gleich 1.");
         break;
-} 
+    case (a == 2):
+        console.log("a ist gleich 2.");
+        break;
+
+    default:
+        console.log("a hat einen anderen Wert.");
+        break;
+}
