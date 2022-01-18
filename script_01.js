@@ -26,7 +26,23 @@ console.log("___________________________");
 // entweder JA oder nix ... alternativlos
 
 // if(false)
-if (isJohnOlder);
-{
-   console.log("John ist älter.") 
+// if (isJohnOlder);
+// {
+//    console.log("John ist älter.") 
+// }
+
+
+/******** IF - ELSE******* */
+// mit Alternative
+// entweder ja oder nein 
+
+if (isJohnOlder) {                    // Ja-Zweig / true
+    console.log("John ist älter.");
+} else {                              // Nein-Zweog / false
+    console.log("John ist jünger.");
 }
+
+
+/********Ternäre (ternary) Schreibweise ********* */
+
+console.log( (isJohnOlder) ? "John is older" : "Mark is older");
